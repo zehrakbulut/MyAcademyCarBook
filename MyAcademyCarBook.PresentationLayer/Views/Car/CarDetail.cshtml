@@ -11,7 +11,7 @@
                 <p class="lead">@ViewBag.v</p>
 
                 <div class="pt-5">
-                    @await Component.InvokeAsync("_CarDetailCommentComponentPartial")
+                    @await Component.InvokeAsync("_CarDetailCommentComponentPartial",new {id=ViewBag.i})
 
                     @await Component.InvokeAsync("_CarDetailLeaveACommentComponentPartial")
 
@@ -30,7 +30,7 @@
                
                 @await Component.InvokeAsync("_CarDetailCategoryComponentPartial")
 
-                @await Component.InvokeAsync("_CarDetailAboutAuthorComponentResult")
+                @await Component.InvokeAsync("_CarDetailAboutAuthorComponentPartial",new {id=ViewBag.i})
 
                 <div class="sidebar-box">
                     <h3 class="text-black">Paragraph</h3>

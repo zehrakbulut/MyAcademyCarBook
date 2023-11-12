@@ -1,5 +1,8 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using MyAcademyCarBook.BusinessLayer.Abstract;
 using MyAcademyCarBook.BusinessLayer.Concrete;
+using MyAcademyCarBook.BusinessLayer.ValidationRules.ServiceValidation;
 using MyAcademyCarBook.DataAccessLayer.Abstract;
 using MyAcademyCarBook.DataAccessLayer.Concrete;
 using MyAcademyCarBook.DataAccessLayer.EntityFramework;
@@ -35,9 +38,14 @@ builder.Services.AddScoped<ICarCategoryService, CarCategoryManager>();
 builder.Services.AddScoped<ICarDetailDal, EfCarDetailDal>();
 builder.Services.AddScoped<ICarDetailService, CarDetailManager>();
 
+builder.Services.AddScoped<ICommentDal, EfCommentDal>();
+builder.Services.AddScoped<ICommentService, CommentManager>();
+
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<CarBookContext>().AddErrorDescriber<CustomIdentityValidator>();
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IValidator<Service>, CreateServiceValidator>();
+
+builder.Services.AddControllersWithViews().AddFluentValidation();
 
 var app = builder.Build();
 
