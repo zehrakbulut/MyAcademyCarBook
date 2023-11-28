@@ -9,6 +9,6 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             return View();
         }
 
-        //public IActionResult()
+
     }
 }

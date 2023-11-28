@@ -1,4 +1,6 @@
-﻿<div class="site-section section-3" style="background-image: url('images/hero_2.jpg');">
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Service>
+
+<div class="site-section section-3" style="background-image: url('images/hero_2.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
@@ -6,39 +8,19 @@
             </div>
         </div>
         <div class="row">
+            @foreach(var item in Model){
             <div class="col-lg-4">
                 <div class="service-1">
                     <span class="service-1-icon">
-                        <span class="flaticon-car-1"></span>
+                        <span class="@item.Icon"></span>
                     </span>
                     <div class="service-1-contents">
-                        <h3>Repair</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, z.</p>
+                        <h3>@item.Title</h3>
+                        <p>@item.Description</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="service-1">
-                    <span class="service-1-icon">
-                        <span class="flaticon-traffic"></span>
-                    </span>
-                    <div class="service-1-contents">
-                        <h3>Car Accessories</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, z.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="service-1">
-                    <span class="service-1-icon">
-                        <span class="flaticon-valet"></span>
-                    </span>
-                    <div class="service-1-contents">
-                        <h3>Own a Car</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, z.</p>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>
