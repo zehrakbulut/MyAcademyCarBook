@@ -40,7 +40,7 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             ViewBag.Title1 = "Araba Detayları";
             ViewBag.Title2 = "Son Araç Detayları";
             ViewBag.i = id;
-            var value=_carDetailService.TGetCarDetailByCarID(id);
+            var value = _carDetailService.TGetCarDetailByCarID(id);
             ViewBag.v = value.Description;
             return View();
         }

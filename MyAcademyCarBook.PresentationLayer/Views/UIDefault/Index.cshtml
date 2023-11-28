@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+
+@await Component.InvokeAsync("_UIDefaultHeaderPartial")
+
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <div class="site-wrap" id="home-section">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+
+
+        @await Component.InvokeAsync("_UIDefaultFeaturePartial")
+
+        @await Component.InvokeAsync("_UIDefaultAppointmentPartial")
+
+        @await Component.InvokeAsync("_UIDefaultOfferPartial")
+
+        @await Component.InvokeAsync("_UIDefaultServicePartial")
+
+        <div class="container site-section mb-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-7 text-center mb-5">
+                    <h2>How it works</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+                </div>
+            </div>
+            @await Component.InvokeAsync("_UIDefaultHowItWorksStepPartial")
+
+        </div>
+
+
+        <div class="site-section bg-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-7 text-center mb-5">
+                        <h2>Customer Testimony</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        @await Component.InvokeAsync("_UIDefaultCommentPartial")
+
+
+        <div class="site-section bg-white">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-7 text-center mb-5">
+                        <h2>Our Blog</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+                    </div>
+                </div>
+
+                @await Component.InvokeAsync("_UIDefaultBlogPartial")
+            </div>
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("_UIDefaultScriptPartial")
+
+</body>
+
+</html>
+
+
