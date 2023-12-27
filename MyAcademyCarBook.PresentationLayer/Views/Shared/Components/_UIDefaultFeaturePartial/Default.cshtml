@@ -1,32 +1,45 @@
-﻿<div class="ftco-blocks-cover-1">
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Car
+
+
+<div class="ftco-blocks-cover-1">
     <div class="ftco-cover-1 overlay" style="background-image: url('/carrent-master/images/hero_1.jpg')">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="feature-car-rent-box-1">
-                        <h3>Range Rover zeze</h3>
-                        <ul class="list-unstyled">
-                            <li>
-                                <span>Doors</span>
-                                <span class="spec">4</span>
-                            </li>
-                            <li>
-                                <span>Seats</span>
-                                <span class="spec">6</span>
-                            </li>
-                            <li>
-                                <span>Lugage</span>
-                                <span class="spec">2 Suitcase/2 Bags</span>
-                            </li>
-                            <li>
-                                <span>Transmission</span>
-                                <span class="spec">Automatic</span>
-                            </li>
-                            <li>
-                                <span>Minium age</span>
-                                <span class="spec">Automatic</span>
-                            </li>
-                        </ul>
+                        <h3>Araç Kirala</h3>
+
+                            <form>
+
+                                <div class="form-group">
+                                    <div style="display: flex; align-items: center;">
+                                        <select asp-for="BrandID" asp-items="@ViewBag.BrandsList" class="form-control"></select>
+                                    </div>
+                                </div>
+                            <div class="form-group">
+                                <div style="display: flex; align-items: center;">
+                                    <select asp-for="CarCategoryID" asp-items="@ViewBag.CarCategoryList" class="form-control"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div style="display: flex; align-items: center;">
+                                    <select asp-for="CarID" asp-items="@ViewBag.GearTypeList" class="form-control"></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div style="display: flex; align-items: center;">
+                                    <select asp-for="CarID" asp-items="@ViewBag.YearList" class="form-control"></select>
+                                </div>
+                            </div>
+
+                                    
+
+
+                                    
+
+                                    
+                            </form>
+
                         <div class="d-flex align-items-center bg-light p-3">
                             <span>$150/day</span>
                             <a href="contact.html" class="ml-auto btn btn-primary">Rent Now</a>
