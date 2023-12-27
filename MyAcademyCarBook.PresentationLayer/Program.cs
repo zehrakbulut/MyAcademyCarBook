@@ -41,6 +41,22 @@ builder.Services.AddScoped<ICarDetailService, CarDetailManager>();
 builder.Services.AddScoped<ICommentDal, EfCommentDal>();
 builder.Services.AddScoped<ICommentService, CommentManager>();
 
+builder.Services.AddScoped<ICompanyDal, EfCompanyDal>();
+builder.Services.AddScoped<ICompanyService, CompanyManager>();
+
+builder.Services.AddScoped<ITeamDal, EfTeamDal>();
+builder.Services.AddScoped<ITeamService, TeamManager>();
+
+builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+
+builder.Services.AddScoped<IContactInfoDal, EfContactInfoDal>();
+builder.Services.AddScoped<IContactInfoService, ContactInfoManager>();
+
+builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+
+
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<CarBookContext>().AddErrorDescriber<CustomIdentityValidator>();
 
 builder.Services.AddTransient<IValidator<Service>, CreateServiceValidator>();

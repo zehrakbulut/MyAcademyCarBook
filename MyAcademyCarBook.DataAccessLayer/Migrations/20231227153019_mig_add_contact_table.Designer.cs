@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyAcademyCarBook.DataAccessLayer.Concrete;
 
@@ -11,9 +12,10 @@ using MyAcademyCarBook.DataAccessLayer.Concrete;
 namespace MyAcademyCarBook.DataAccessLayer.Migrations
 {
     [DbContext(typeof(CarBookContext))]
-    partial class CarBookContextModelSnapshot : ModelSnapshot
+    [Migration("20231227153019_mig_add_contact_table")]
+    partial class mig_add_contact_table
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -465,27 +467,6 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.ContactInfo", b =>
-                {
-                    b.Property<int>("ContactInfoID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContactInfoID"), 1L, 1);
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Value")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ContactInfoID");
-
-                    b.ToTable("ContactInfos");
-                });
-
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.HowItWorksStep", b =>
                 {
                     b.Property<int>("HowItWorksStepID")
@@ -597,31 +578,6 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.HasKey("TeamID");
 
                     b.ToTable("Teams");
-                });
-
-            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Testimonial", b =>
-                {
-                    b.Property<int>("TestimonialID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TestimonialID"), 1L, 1);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NameSurname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("TestimonialID");
-
-                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

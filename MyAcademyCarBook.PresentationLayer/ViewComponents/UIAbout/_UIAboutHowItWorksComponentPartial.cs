@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MyAcademyCarBook.PresentationLayer.ViewComponents.UIDefault
+namespace MyAcademyCarBook.PresentationLayer.ViewComponents.UIAbout
 {
-    public class _UIDefaultHeaderPartial:ViewComponent
+    public class _UIAboutHowItWorksComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

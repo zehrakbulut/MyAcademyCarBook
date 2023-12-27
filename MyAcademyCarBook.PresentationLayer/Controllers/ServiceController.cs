@@ -15,12 +15,6 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             _serviceService = serviceService;
         }
 
-        public IActionResult Index()
-		{
-			var values=_serviceService.TGetListAll();
-			return View(values);
-		}
-
 		public IActionResult ServiceList()
 		{
 			var values = _serviceService.TGetListAll();

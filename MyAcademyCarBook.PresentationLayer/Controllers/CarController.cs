@@ -27,14 +27,6 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             return View(values);    
         }
 
-        public IActionResult CarList()
-        {
-            ViewBag.Title1 = "Araç Listesi";
-            ViewBag.Title2 = "Sizin İçin Araç Listemiz";
-            var values = _carService.TGetAllCarsWithBrands();
-            return View(values);    
-        }
-
         public IActionResult CarDetail(int id)
         {
             ViewBag.Title1 = "Araba Detayları";

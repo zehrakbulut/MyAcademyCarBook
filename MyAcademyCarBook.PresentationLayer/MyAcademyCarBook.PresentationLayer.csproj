@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\bin\**" />
+    <Compile Remove="wwwroot\obj\**" />
+    <Content Remove="wwwroot\bin\**" />
+    <Content Remove="wwwroot\obj\**" />
+    <EmbeddedResource Remove="wwwroot\bin\**" />
+    <EmbeddedResource Remove="wwwroot\obj\**" />
+    <None Remove="wwwroot\bin\**" />
+    <None Remove="wwwroot\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\colorlib-regform-8\.sass-cache\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
     <None Include="wwwroot\colorlib-regform-8\.sass-cache\2af427b2894d1e78c5806e231aa35d00838a84e0\style.scssc" />
     <None Include="wwwroot\colorlib-regform-8\.sass-cache\632f5d1dd893d2e8764de51b8ca4120e25043113\extend.scssc" />
