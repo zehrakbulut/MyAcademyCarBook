@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyAcademyCarBook.BusinessLayer.Abstract;
+using MyAcademyCarBook.PresentationLayer.Models;
 
 namespace MyAcademyCarBook.PresentationLayer.ViewComponents.UIDefault
 {
@@ -33,7 +34,7 @@ namespace MyAcademyCarBook.PresentationLayer.ViewComponents.UIDefault
             var uniqueYear = CarList.Select(c => c.Year).Distinct().OrderBy(y => y).ToList();
             ViewBag.YearList = new SelectList(uniqueYear);
 
-
+            
             return View();
         }
 

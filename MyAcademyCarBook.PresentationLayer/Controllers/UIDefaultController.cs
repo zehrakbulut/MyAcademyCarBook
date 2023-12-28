@@ -1,14 +1,70 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// UIDefaultController.cs
+using Microsoft.AspNetCore.Mvc;
+using MyAcademyCarBook.BusinessLayer.Abstract;
+using MyAcademyCarBook.EntityLayer.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MyAcademyCarBook.PresentationLayer.Controllers
 {
     public class UIDefaultController : Controller
     {
+        private readonly ICarService _carService;
+        private readonly IBrandService _brandService;
+        private readonly ICarCategoryService _carCategoryService;
+
+        public UIDefaultController(ICarService carService, IBrandService brandService, ICarCategoryService carCategoryService)
+        {
+            _carService = carService;
+            _brandService = brandService;
+            _carCategoryService = carCategoryService;
+        }
+
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(int? brandId, int? carCategoryId, string gearType, int? year)
+        {
+            // The same logic as the GET action
 
+            var carsQuery = _carService.TGetAllCarsWithBrands().AsQueryable();
+
+            if (brandId.HasValue)
+            {
+                carsQuery = carsQuery.Where(c => c.BrandID == brandId);
+            }
+
+            if (carCategoryId.HasValue)
+            {
+                carsQuery = carsQuery.Where(c => c.CarCategoryID == carCategoryId);
+            }
+
+            if (!string.IsNullOrEmpty(gearType))
+            {
+                carsQuery = carsQuery.Where(c => string.Equals(c.GearType, gearType, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (year.HasValue)
+            {
+                carsQuery = carsQuery.Where(c => c.Year == year);
+            }
+
+            var filteredCars = carsQuery.ToList();
+
+
+
+
+            return View("FilteredCarsList",filteredCars);
+        }
+
+        public IActionResult FilteredCarsList(List<Car> filteredCars)
+        {
+            return View(filteredCars);
+        }
     }
 }
