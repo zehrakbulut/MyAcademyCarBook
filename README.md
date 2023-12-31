@@ -42,6 +42,9 @@ Bu proje, M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde, .Net 6.0 tek
 M&Y Yazılım Eğitim Akademi Danışmanlık danışmanlığında, sevgili Murat Yücedağ hocamızın rehberliğinde, .Net eğitimi kapsamında bu projeyi başarıyla tamamladım. Projede ASP.Net Framework ve ASP.Net Core API ile güçlendirilmiş, SQL Server ve Entity Framework ile desteklenen bir altyapı oluşturduk.
 
 Teşekkürler! 🙌
+
+
+
 Zehra Akbulut ❤️❤️❤️
 
 
