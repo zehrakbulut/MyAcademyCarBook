@@ -1,4 +1,46 @@
+# CarBook: Rent a Car Project
 
+Selam herkese! 🚀 M&Y Yazılım Eğitim Akademi Danışmanlık kapsamında, .Net Full-Stack Developer eğitiminde yer alan CarBook projesini sizlere tanıtmaktan heyecan duyuyorum.
+
+## Proje Detayları
+
+Proje Adı: **CarBook - Rent a Car Project**
+
+Bu proje, M&Y Yazılım Eğitim Akademi Danışmanlık bünyesinde, .Net 6.0 teknolojisi ve N Tier Architecture kullanılarak geliştirilmiş kapsamlı bir Rent a Car uygulamasını temsil etmektedir. Projenin temelini atan beş katmanlı yapı şu şekilde:
+
+- **Entity Layer:** Veritabanı işlemlerini yöneten entitileri içerir.
+- **DataAccess Layer:** Veritabanı işlemlerini gerçekleştiren veritabanı işlemlerini barındırır.
+- **Business Layer:** Uygulamanın iş mantığını temsil eder.
+- **Dto Layer:** Data Transfer Objects (DTO) için kullanılan katmandır.
+- **Presentation Layer:** Kullanıcı arayüzünü içerir.
+
+## Kullandığımız Teknolojiler
+
+- ASP.Net Framework
+- ASP.Net Core MVC
+- SQL Server
+- Entity Framework
+- Identity
+- N Tier Architecture
+- Fluent Validation
+- ViewComponent
+
+## Öne Çıkan Özellikler 🌟
+
+- **Kullanıcı Dostu Filtreleme:** Kullanıcılara, araç detaylarını özelleştirilmiş filtreleme seçenekleriyle keşfetme imkanı sunuyoruz.
+- **Yorumlarla Araç İnceleme:** Kullanıcıların araçları değerlendirip yorum yapabildiği, güvenilir incelemelerle araç seçimini kolaylaştırıyoruz.
+- **Güvenli İdentity Yönetimi:** Identity kullanarak sağlanan güvenli kayıt ve giriş işlemleriyle kullanıcı verilerini en üst düzeyde koruyoruz.
+- **Admin Paneli İle İstatistik Takibi:** Admin panelimizde, proje istatistiklerini anlık takip edebilir ve veri odaklı kararlar alabilirsiniz.
+- **Araç ve Kategori Yönetimi:** Kolayca araç ve kategori ekleyebilir, düzenleyebilir ve silebilirsiniz. Tam CRUD (Create, Read, Update, Delete) kontrolü sizin elinizde!
+- **Gelen Mesajlar:** Kullanıcılarınızdan gelen mesajları tek bir yerden görüntüleyerek etkileşimi yönetin.
+- **Çok Katmanlı CRUD İşlemleri:** Projenin temelini atan çok katmanlı mimari ile veritabanı işlemlerini rahatça yönetebilirsiniz.
+
+## Proje Geliştirme Süreci
+
+M&Y Yazılım Eğitim Akademi Danışmanlık danışmanlığında, sevgili Murat Yücedağ hocamızın rehberliğinde, .Net eğitimi kapsamında bu projeyi başarıyla tamamladım. Projede ASP.Net Framework ve ASP.Net Core API ile güçlendirilmiş, SQL Server ve Entity Framework ile desteklenen bir altyapı oluşturduk.
+
+Teşekkürler! 🙌
+Zehra Akbulut ❤️❤️❤️
 
 
 
