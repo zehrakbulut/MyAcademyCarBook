@@ -3,100 +3,360 @@
     Layout = null;
 }
 
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
 <!doctype html>
 <html lang="en">
+
 <head>
-    <title>Proje 3 Book Car Admin</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Collective Admin Panel a Flat Bootstrap Responsive Website Template | Home :: W3Layouts</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/sidebar-09/css/style.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/collective-admin-panel-starter/starter/assets/css/style-starter.css">
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <div class="wrapper d-flex align-items-stretch">
-        <nav id="sidebar">
-            <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                </button>
+<body class="sidebar-menu-collapsed" >
+    <div class="se-pre-con"></div>
+    <section >
+        <!-- sidebar menu start -->
+        <div class="sidebar-menu sticky-sidebar-menu">
+
+            <!-- logo start -->
+            <div class="logo">
+                <h1><a href="index.html">Car Book</a></h1>
             </div>
-            <div class="img bg-wrap text-center py-4" style="background-image: url(/sidebar-09/images/bg_1.jpg);">
-                <div class="user-logo">
-                    <div class="img" style="background-image: url(/sidebar-09/images/logo.jpg);"></div>
-                    <h3>Catriona Henderson</h3>
+
+            <!-- if logo is image enable this -->
+            <!-- image logo --
+            <div class="logo">
+              <a href="index.html">
+                <img src="image-path" alt="Your logo" title="Your logo" class="img-fluid" style="height:35px;" />
+              </a>
+            </div>
+            <!-- //image logo -->
+
+            <div class="logo-icon text-center">
+                <a href="index.html" title="logo"><img src="~/collective-admin-panel-starter/starter/assets/images/logo.png" alt="logo-icon"> </a>
+            </div>
+            <!-- //logo end -->
+
+            <div class="sidebar-menu-inner">
+
+                <!-- sidebar nav start -->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li>
+                        <a href="/Dashboard/Index/"><i class="fa fa-tachometer"></i><span> Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="/Car/Index/"><i class="fa fa-tachometer"></i><span> Arabalar</span></a>
+                    </li>
+                    <li>
+                        <a href="/Car/Index2/"><i class="fa fa-tachometer"></i><span> Arabalar & Markalar</span></a>
+                    </li>
+                    <li>
+                        <a href="/Brand/Index/"><i class="fa fa-tachometer"></i><span> Markalar</span></a>
+                    </li>
+                    <li>
+                        <a href="/CarStatus/Index/"><i class="fa fa-tachometer"></i><span> Araba Durumları</span></a>
+                    </li>
+                    <li>
+                        <a href="/Price/Index/"><i class="fa fa-tachometer"></i><span> Araç Fiyatları</span></a>
+                    </li>
+                    <li>
+                        <a href="/Service/ServiceList/"><i class="fa fa-tachometer"></i><span> Hizmetler</span></a>
+                    </li>
+                    <li>
+                        <a href="/CarCategory/Index/"><i class="fa fa-tachometer"></i><span> Kategoriler</span></a>
+                    </li>
+                    <li>
+                        <a href="/CarDetail/Index/"><i class="fa fa-tachometer"></i><span> Detaylar</span></a>
+                    </li>
+                    <li>
+                        <a href="/CarRant/Index/"><i class="fa fa-tachometer"></i><span> Kiralar</span></a>
+                    </li>
+                    <li>
+                        <a href="/Comment/Index/"><i class="fa fa-tachometer"></i><span> Yorumlar</span></a>
+                    </li>
+                    <li>
+                        <a href="/ContactInfo/Index/"><i class="fa fa-tachometer"></i><span> İletişim Bilgileri</span></a>
+                    </li>
+                    <li>
+                        <a href="/Contact/Index/"><i class="fa fa-tachometer"></i><span> İletişim</span></a>
+                    </li>
+                    <li>
+                        <a href="/HowItWorkStep/Index/"><i class="fa fa-tachometer"></i><span> Yardım</span></a>
+                    </li>
+                    <li>
+                        <a href="/Location/Index/"><i class="fa fa-tachometer"></i><span> Konum</span></a>
+                    </li>
+                    <li>
+                        <a href="/Team/Index/"><i class="fa fa-tachometer"></i><span> Ekip</span></a>
+                    </li>
+                    <li>
+                        <a href="/Testimonial/Index/"><i class="fa fa-tachometer"></i><span> Geri Dönüş</span></a>
+                    </li>
+                    <li>
+                        <a href="/Company/Index/"><i class="fa fa-tachometer"></i><span> Şirketler</span></a>
+                    </li>
+                </ul>
+                <!-- //sidebar nav end -->
+                <!-- toggle button start -->
+                <a class="toggle-btn">
+                    <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
+                    <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+                </a>
+                <!-- //toggle button end -->
+            </div>
+        </div>
+        <!-- //sidebar menu end -->
+        <!-- header-starts -->
+        <div class="header sticky-header">
+
+            <!-- notification menu start -->
+            <div class="menu-right">
+                <div class="navbar user-panel-top">
+                    <div class="search-box">
+                        <form action="#search-results.html" method="get">
+                            <input class="search-input" placeholder="Search Here..." type="search" id="search">
+                            <button class="search-submit" value=""><span class="fa fa-search"></span></button>
+                        </form>
+                    </div>
+                    <div class="user-dropdown-details d-flex">
+                        <div class="profile_details_left">
+                            <ul class="nofitications-dropdown">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-bell-o"></i><span class="badge blue">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="notification_header">
+                                                <h3>You have 3 new notifications</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar1.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>Johnson purchased template</p>
+                                                    <span>Just Now</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="odd">
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar2.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>New customer registered </p>
+                                                    <span>1 hour ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar3.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>Lorem ipsum dolor sit amet </p>
+                                                    <span>2 hours ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="notification_bottom">
+                                                <a href="#all" class="bg-primary">See all notifications</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-comment-o"></i><span class="badge blue">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="notification_header">
+                                                <h3>You have 4 new messages</h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar1.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>Johnson purchased template</p>
+                                                    <span>Just Now</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="odd">
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar2.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>New customer registered </p>
+                                                    <span>1 hour ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar3.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>Lorem ipsum dolor sit amet </p>
+                                                    <span>2 hours ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="grid">
+                                                <div class="user_img"><img src="~/collective-admin-panel-starter/starter/assets/images/avatar1.jpg" alt=""></div>
+                                                <div class="notification_desc">
+                                                    <p>Johnson purchased template</p>
+                                                    <span>Just Now</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="notification_bottom">
+                                                <a href="#all" class="bg-primary">See all messages</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profile_details">
+                            <ul>
+                                <li class="dropdown profile_details_drop">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        <div class="profile_img">
+                                            <img src="assets/images/profileimg.jpg" class="rounded-circle" alt="" />
+                                            <div class="user-active">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
+                                        <li class="user-info">
+                                            <h5 class="user-name">John Deo</h5>
+                                            <span class="status ml-2">Available</span>
+                                        </li>
+                                        <li> <a href="#"><i class="lnr lnr-user"></i>My Profile</a> </li>
+                                        <li> <a href="#"><i class="lnr lnr-users"></i>1k Followers</a> </li>
+                                        <li> <a href="#"><i class="lnr lnr-cog"></i>Setting</a> </li>
+                                        <li> <a href="#"><i class="lnr lnr-heart"></i>100 Likes</a> </li>
+                                        <li class="logout"> <a href="#sign-up.html"><i class="fa fa-power-off"></i> Logout</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <ul class="list-unstyled components mb-5">
-                <li>
-                    <a href="#"><span class="fa fa-home mr-3"></span> Dashboard</a>
-                </li>
-                <li>
-                    <a href="/Car/Index/"><span class="fa fa-car mr-3"></span> Arabalar</a>
-                </li>
-                <li>
-                    <a href="/Car/Index2/"><span class="fa fa-bus mr-3"></span> Arabalar & Markalar</a>
-                </li>
-                <li>
-                    <a href="/Brand/Index/"><span class="fa fa-gift mr-3"></span> Markalar</a>
-                </li>
-                <li>
-                    <a href="/CarStatus/Index/"><span class="fa fa-cloud mr-3"></span> Araba Durumları</a>
-                </li>
-                <li>
-                    <a href="/Price/Index/"><span class="fa fa-money mr-3"></span> Araç Fiyatları</a>
-                </li>
-                <li>
-                    <a href="/Service/ServiceList/"><span class="fa fa-money mr-3"></span> Hizmetler</a>
-                </li>
-                <li>
-                    <a href="/CarCategory/Index/"><span class="fa fa-money mr-3"></span> Kategoriler</a>
-                </li>
-                <li>
-                    <a href="/CarDetail/Index/"><span class="fa fa-money mr-3"></span> Detaylar</a>
-                </li>
-                <li>
-                    <a href="/CarRant/Index/"><span class="fa fa-money mr-3"></span> Kiralar</a>
-                </li>
-                <li>
-                    <a href="/Comment/Index/"><span class="fa fa-money mr-3"></span> Yorumlar</a>
-                </li>
-                <li>
-                    <a href="/Company/Index/"><span class="fa fa-money mr-3"></span> Şirketler</a>
-                </li>
-                <li>
-                    <a href="/ContactInfo/Index/"><span class="fa fa-money mr-3"></span> İletişim Bilgileri</a>
-                </li>
-                <li>
-                    <a href="/Contact/Index/"><span class="fa fa-money mr-3"></span> İletişim</a>
-                </li>
-                <li>
-                    <a href="/HowItWorkStep/Index/"><span class="fa fa-money mr-3"></span> Yardım</a>
-                </li>
-                <li>
-                    <a href="/Location/Index/"><span class="fa fa-money mr-3"></span> Konum</a>
-                </li>
-                <li>
-                    <a href="/Team/Index/"><span class="fa fa-money mr-3"></span> Ekip</a>
-                </li>
-                <li>
-                    <a href="/Testimonial/Index/"><span class="fa fa-money mr-3"></span> Geri Dönüş</a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content" class="p-4 p-md-5 pt-5">
-            @RenderBody()
+            <!--notification menu end -->
         </div>
-    </div>
+        <!-- //header-ends -->
+        <!-- main content start -->
+        <div class="main-content" style="background-color:white">
+            <div class="container-fluid content-top-gap">
+            <!-- content -->
+            <div class="container"style="padding-top:20px;">
+                @RenderBody()
 
-    <script src="~/sidebar-09/js/jquery.min.js"></script>
-    <script src="~/sidebar-09/js/popper.js"></script>
-    <script src="~/sidebar-09/js/bootstrap.min.js"></script>
-    <script src="~/sidebar-09/js/main.js"></script>
+            </div>
+        </div>
+            <!-- //content -->
+        </div>
+        <!-- main content end-->
+    </section>
+    <!--footer section start-->
+
+    <!--footer section end-->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+
+
+    <script src="~/collective-admin-panel-starter/starter/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/collective-admin-panel-starter/starter/assets/js/jquery-1.10.2.min.js"></script>
+
+    <!-- chart js -->
+    <script src="~/collective-admin-panel-starter/starter/assets/js/Chart.min.js"></script>
+    <script src="~/collective-admin-panel-starter/starter/assets/js/utils.js"></script>
+    <!-- //chart js -->
+    <!-- Different scripts of charts.  Ex.Barchart, Linechart -->
+    <script src="~/collective-admin-panel-starter/starter/assets/js/bar.js"></script>
+    <script src="~/collective-admin-panel-starter/starter/assets/js/linechart.js"></script>
+    <!-- //Different scripts of charts.  Ex.Barchart, Linechart -->
+
+
+    <script src="~/collective-admin-panel-starter/starter/assets/js/jquery.nicescroll.js"></script>
+    <script src="~/collective-admin-panel-starter/starter/assets/js/scripts.js"></script>
+
+    <!-- close script -->
+    <script>
+        var closebtns = document.getElementsByClassName("close-grid");
+        var i;
+
+        for (i = 0; i < closebtns.length; i++) {
+            closebtns[i].addEventListener("click", function () {
+                this.parentElement.style.display = 'none';
+            });
+        }
+    </script>
+    <!-- //close script -->
+    <!-- disable body scroll when navbar is in active -->
+    <script>
+        $(function () {
+            $('.sidebar-menu-collapsed').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll when navbar is in active -->
+    <!-- loading-gif Js -->
+    <script src="~/collective-admin-panel-starter/starter/assets/js/modernizr.js"></script>
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+    <!--// loading-gif Js -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/collective-admin-panel-starter/starter/assets/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

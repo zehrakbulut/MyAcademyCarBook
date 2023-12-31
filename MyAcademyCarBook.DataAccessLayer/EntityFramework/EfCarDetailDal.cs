@@ -27,11 +27,5 @@ namespace MyAcademyCarBook.DataAccessLayer.EntityFramework
             return values;
         }
 
-        public CarDetail GetCarDetailWithCar()
-        {
-            var context=new CarBookContext();
-            var values = context.CarDetails.Include(x => x.Car).ThenInclude(y=>y.Brand).FirstOrDefault();
-            return values;
-        }
     }
 }

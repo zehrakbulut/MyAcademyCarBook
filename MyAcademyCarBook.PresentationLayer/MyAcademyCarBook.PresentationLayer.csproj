@@ -79,6 +79,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\bar.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\Chart.min.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\jquery-1.10.2.min.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\jquery.nicescroll.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\linechart.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\modernizr.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\scripts.js" />
+    <None Include="wwwroot\collective-admin-panel-starter\starter\assets\js\utils.js" />
     <None Include="wwwroot\colorlib-regform-8\.sass-cache\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
     <None Include="wwwroot\colorlib-regform-8\.sass-cache\2af427b2894d1e78c5806e231aa35d00838a84e0\style.scssc" />
     <None Include="wwwroot\colorlib-regform-8\.sass-cache\632f5d1dd893d2e8764de51b8ca4120e25043113\extend.scssc" />
