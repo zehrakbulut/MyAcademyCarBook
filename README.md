@@ -1,14 +1,16 @@
 
-## İlişkisel Veritabanı Diyagramı
+## İLİŞKİSEL VERİTABANI DİYAGRAMI
 ![Ekran görüntüsü 2023-12-31 224127](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/35e02a6b-f09c-4c84-9410-35e54f26adcc)
 
-
+## ANASAYFA
 ![Ekran görüntüsü 2023-12-31 221415](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/39872284-f674-45ba-a926-dc1ca7415f14)
 ![Ekran görüntüsü 2023-12-31 221429](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/3b404eac-edb4-41f0-996f-7cdead7fa056)
 ![Ekran görüntüsü 2023-12-31 221441](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/842aeb7e-51f7-414a-8de9-aef32b3ad053)
 ![Ekran görüntüsü 2023-12-31 221451](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/40d1eff6-ecf9-4b33-ba7f-394e5a319f58)
 ![Ekran görüntüsü 2023-12-31 221508](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/05c68027-17ad-4efd-b212-6bfed233e736)
 ![Ekran görüntüsü 2023-12-31 221538](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/8cfdd040-9408-4054-9b4e-99eec51ee416)
+
+
 ![Ekran görüntüsü 2023-12-31 221554](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/a2ee7935-8494-4cdf-915d-9584ad1ab16a)
 ![Ekran görüntüsü 2023-12-31 221611](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/a48265ca-413b-4c88-8506-b1581c0b248d)
 ![Ekran görüntüsü 2023-12-31 221611](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/e1448496-8747-4a70-9e6c-c847dbb7c591)
