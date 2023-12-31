@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MyAcademyCarBook.BusinessLayer.Abstract;
 using MyAcademyCarBook.EntityLayer.Concrete;
@@ -33,6 +34,8 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
                                              Value=x.CarID.ToString()
                                          }).ToList();
             ViewBag.v=values;
+
+            
             return View();
         }
 

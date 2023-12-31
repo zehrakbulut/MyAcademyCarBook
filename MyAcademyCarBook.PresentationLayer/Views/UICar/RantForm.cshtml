@@ -1,0 +1,28 @@
+﻿<div class="col-md-4">
+    <h4>Rental Form</h4>
+    <form method="post" asp-controller="UICar" asp-action="CarRant">
+        <input type="hidden" name="CarID" />
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="FullName" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" required>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="col-md-6">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control datepicker" id="startDate" name="startDate" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" class="form-control datepicker" id="endDate" name="endDate" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="height: 45px; margin-top: 40px;">Kirala</button>
+    </form>
+</div>

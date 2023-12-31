@@ -1,4 +1,4 @@
-﻿@model List<Car>
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Car>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
@@ -44,7 +44,7 @@
                                 </li>
                             </ul>
                             <div class="d-flex action">
-                                <a href="contact.html" class="btn btn-primary">Hemen Kirala</a>
+                                <a href="/UICar/CarRant/@item.CarID" class="btn btn-primary">Hemen Kirala</a>
                                 <a href="/Car/CarDetail/@item.CarID" class="btn btn-warning" style="margin-left:1.2rem">Araç Detayları</a>
                             </div>
                         </div>

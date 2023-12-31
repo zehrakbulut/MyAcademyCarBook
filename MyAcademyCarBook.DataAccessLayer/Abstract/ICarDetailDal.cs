@@ -11,5 +11,6 @@ namespace MyAcademyCarBook.DataAccessLayer.Abstract
     {
         CarDetail GetCarDetailByCarID(int id);
         CarDetail GetCarDetailWithAuthor(int id);
+        CarDetail GetCarDetailWithCar();
     }
 }

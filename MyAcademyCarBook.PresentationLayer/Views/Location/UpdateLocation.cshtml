@@ -1,0 +1,17 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Location
+@{
+    ViewData["Title"] = "UpdateLocation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Konum Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="LocationID" />
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="LocationName" class="form-control" style="border:1px solid #2222" />
+    <label>Durum</label>
+    <input type="text" asp-for="Status" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <button class="btn btn-success">Konumu Güncelle</button>
+</form>

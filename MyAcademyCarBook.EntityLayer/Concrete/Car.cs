@@ -23,6 +23,7 @@ namespace MyAcademyCarBook.EntityLayer.Concrete
         public byte PersonCount { get; set; }
         public int Year { get; set; }
         public bool Status { get; set; }
+        public int? DailyPrice { get; set; }
 
         public int CarStatusID { get; set; }
         public CarStatus CarStatus { get; set; }
@@ -32,5 +33,7 @@ namespace MyAcademyCarBook.EntityLayer.Concrete
         public List<CarDetail> CarDetails { get; set; }
 
         public List<Comment> Comments { get; set; }
+
+        public List<CarRant> CarRants { get; set; }
     }
 }

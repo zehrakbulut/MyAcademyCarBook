@@ -56,6 +56,12 @@ builder.Services.AddScoped<IContactInfoService, ContactInfoManager>();
 builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 
+builder.Services.AddScoped<ICarRantDal, EfCarRantDal>();
+builder.Services.AddScoped<ICarRantService, CarRantManager>();
+
+builder.Services.AddScoped<ILocationDal, EfLocationDal>();
+builder.Services.AddScoped<ILocationService, LocationManager>();
+
 
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<CarBookContext>().AddErrorDescriber<CustomIdentityValidator>();
 

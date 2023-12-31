@@ -1,0 +1,22 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Company
+@{
+    ViewData["Title"] = "UpdateCompany";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Şirket Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="CompanyID" />
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="Title" class="form-control" style="border:1px solid #2222" />
+    <label>Açıklama1</label>
+    <input type="text" asp-for="Description1" class=" form-control" style="border:1px solid #2222" />
+    <label>Açıklama2</label>
+    <input type="text" asp-for="Description2" class=" form-control" style="border:1px solid #2222" />
+    <label>Durum</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <button class="btn btn-success">Şirketi Güncelle</button>
+</form>
+

@@ -1,0 +1,20 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.CarRant
+@{
+    ViewData["Title"] = "AddCarRant";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Yeni Kira Girişi</h1>
+
+<form method="post">
+    <label>Ad Soyad</label>
+    <input type="text" asp-for="FullName" class="form-control" style="border:1px solid #2222" />
+    <label>Mail</label>
+    <input type="text" asp-for="Email" class="form-control" style="border:1px solid #2222" /> 
+    <label>Gün Sayısı</label>
+    <input type="text" asp-for="DayNumber" class="form-control" style="border:1px solid #2222" />
+    <label>Araba</label>
+    @Html.DropDownListFor(x=>x.CarID,(List<SelectListItem>)ViewBag.v,new {@class="form-control", @style="border:1px solid #2222"})
+    <br />
+    <button class="btn btn-primary">Kirayı Kaydet</button>
+</form>

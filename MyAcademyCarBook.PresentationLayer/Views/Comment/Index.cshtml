@@ -1,0 +1,28 @@
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Comment>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Yorum</th>
+        <th>Oluşturulma Tarihi</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.CommentID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Description</td>
+            <td>@item.CreatedDate</td>
+            <td><a href="/Comment/DeleteComment/@item.CommentID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Comment/UpdateComment/@item.CommentID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Comment/AddComment/" class="btn btn-outline-primary">Yeni Yorum Ekle</a>

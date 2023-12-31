@@ -26,5 +26,12 @@ namespace MyAcademyCarBook.DataAccessLayer.EntityFramework
             var values=context.CarDetails.Include(x=>x.AppUser).Where(y=>y.CarID == id).FirstOrDefault();
             return values;
         }
+
+        public CarDetail GetCarDetailWithCar()
+        {
+            var context=new CarBookContext();
+            var values = context.CarDetails.Include(x => x.Car).ThenInclude(y=>y.Brand).FirstOrDefault();
+            return values;
+        }
     }
 }

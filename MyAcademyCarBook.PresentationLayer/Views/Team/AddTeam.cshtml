@@ -1,0 +1,25 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Team
+
+@{
+    ViewData["Title"] = "AddTeam";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+<h1>Yeni Ekip Girişi</h1>
+
+<form method="post">
+    <label>Alan Adı</label>
+    <input type="text" asp-for="Title" class="form-control" style="border:1px solid #2222" />
+    <label>Ad Soyad</label>
+    <input type="text" asp-for="NameSurname" class="form-control" style="border:1px solid #2222" />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" style="border:1px solid #2222" />
+    <label>Resim</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <button class="btn btn-primary">Kategoriyi Kaydet</button>
+</form>
+
+

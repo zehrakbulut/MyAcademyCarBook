@@ -11,14 +11,10 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
     public class UIDefaultController : Controller
     {
         private readonly ICarService _carService;
-        private readonly IBrandService _brandService;
-        private readonly ICarCategoryService _carCategoryService;
 
-        public UIDefaultController(ICarService carService, IBrandService brandService, ICarCategoryService carCategoryService)
+        public UIDefaultController(ICarService carService)
         {
             _carService = carService;
-            _brandService = brandService;
-            _carCategoryService = carCategoryService;
         }
 
         [HttpGet]

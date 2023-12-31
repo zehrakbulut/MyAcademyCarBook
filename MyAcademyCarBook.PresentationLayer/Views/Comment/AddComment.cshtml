@@ -1,0 +1,20 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Comment
+@{
+    ViewData["Title"] = "AddComment";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Yeni Yorum Girişi</h1>
+
+<form method="post">
+    <label>Ad Soyad</label>
+    <input type="text" asp-for="NameSurname" class="form-control" style="border:1px solid #2222" />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" style="border:1px solid #2222" />
+    <label>Tarih</label>
+    <input type="text" asp-for="CreatedDate" class="form-control" style="border:1px solid #2222" />
+    <label>Araba</label>
+    @Html.DropDownListFor(x=>x.CarID,(List<SelectListItem>)ViewBag.v,new {@class="form-control", @style="border:1px solid #2222"})
+    <br />
+    <button class="btn btn-primary">Yorumu Kaydet</button>
+</form>

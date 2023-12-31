@@ -1,0 +1,27 @@
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Location>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Konum</th>
+        <th>Durum</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.LocationID</td>
+            <td>@item.LocationName</td>
+            <td>@item.Status</td>
+            <td><a href="/Location/DeleteLocation/@item.LocationID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Location/UpdateLocation/@item.LocationID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Location/AddLocation/" class="btn btn-outline-primary">Yeni Konum Ekle</a>
+
