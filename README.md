@@ -66,5 +66,8 @@
 ![Ekran görüntüsü 2023-12-31 223534](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/dea3157f-1d14-4dc0-a6eb-c2f96cead154)
 ![Ekran görüntüsü 2023-12-31 223600](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/65b5edd0-9eec-40b3-995f-c7235a306fd9)
 ![Ekran görüntüsü 2023-12-31 223622](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/28bf88e2-d51c-4eb6-bf2d-18d0e454c081)
-![Ekran görüntüsü 2023-12-31 223720](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/3e1f88b1-1288-4030-a919-18b2bcc1c100)
 ![Ekran görüntüsü 2023-12-31 223743](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/b037c598-5d33-4173-826d-aa09b33d89bd)
+
+## VALİDATİON RULES
+![Ekran görüntüsü 2023-12-31 223720](https://github.com/zehrakbulut/MyAcademyCarBook/assets/103004228/3e1f88b1-1288-4030-a919-18b2bcc1c100)
+
