@@ -1,6 +1,8 @@
 # CarBook: Rent a Car Project
 
-Selam herkese! 🚀 M&Y Yazılım Eğitim Akademi Danışmanlık kapsamında, .Net Full-Stack Developer eğitiminde yer alan CarBook projesini sizlere tanıtmaktan heyecan duyuyorum.
+Herkese Merhaba! 
+
+🚀 M&Y Yazılım Eğitim Akademi Danışmanlık kapsamında, .Net Full-Stack Developer eğitiminde yer alan CarBook projesini sizlere tanıtmaktan heyecan duyuyorum.
 
 ## Proje Detayları
 
