@@ -12,7 +12,7 @@
             {
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="item-1">
-                        <a href="#"><img src="@item.ImageUrl" alt="Image" class="img-fluid"></a>
+                        <a href="#"><img src="@item.ImageUrl" alt="Image" class="img-fluid" style="height:260px"></a>
                         <div class="item-1-contents">
                             <div class="text-center">
                                 <h3><a href="#">@item.Brand.BrandName @item.Model</a></h3>
@@ -23,7 +23,7 @@
                                     <span class="icon-star text-warning"></span>
                                     <span class="icon-star text-warning"></span>
                                 </div>
-                                <div class="rent-price"><span>1200₺/</span>günlük</div>
+                                <div class="rent-price"><span>@item.DailyPrice ₺/</span>günlük</div>
                             </div>
                             <ul class="specs">
                                 <li>

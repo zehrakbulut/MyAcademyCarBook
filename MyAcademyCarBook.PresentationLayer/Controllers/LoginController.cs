@@ -9,10 +9,12 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
     {
 
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
 
-        public LoginController(SignInManager<AppUser> signInManager)
+        public LoginController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
         {
             _signInManager = signInManager;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -27,6 +29,7 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             var result=await _signInManager.PasswordSignInAsync(model.UserName, model.Password,false,false);
             if(result.Succeeded)
             {
+                TempData["userName"] = _userManager.Users.Where(x=>x.Name == model.UserName).Select(y=>y.ImageUrl).FirstOrDefault();
                 return RedirectToAction("Index","CarStatus");
             }
             return View();
